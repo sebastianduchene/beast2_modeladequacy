@@ -1,0 +1,192 @@
+<beast version='2.0'
+  namespace='beast.phylodynamics:beast.phylodynamics.epidemiology:beast.core:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood:beast.evolution.speciation:beast.core.parameter'>
+
+  <tree spec='beast.util.TreeParser' id='tree' IsLabelledNewick='true'
+	adjustTipHeights='false' newick="(((((((1:0.09839286621,(((37:0.1150879285,241:0.1290879285):0.004526916622,46:0.05161484508):0.02670869042,236:0.1333235355):0.05306933071):0.05230358919,((((42:0.03762672877,75:0.3416267288):0.06257846546,(77:0.2249879525,(287:0.1221954988,292:0.07819549885):0.1087924537):0.006217241695):0.009032509195,(((((((63:0.06466473489,83:0.01866473489):0.04134675155,(73:0.05404314034,(80:0.05172387255,81:0.05972387255):0.005319267784):0.0299683461):0.04580529983,(64:0.04429597192,((67:0.04107600119,78:0.06307600119):0.004658421238,79:0.1087344224):0.001561549493):0.04452081434):0.007067360006,((((65:0.02701760944,(66:0.01759540099,76:0.01559540099):0.003422208444):0.003792107003,71:0.01380971644):0.03350232479,69:0.07831204123):0.006199112696,(70:0.01913481691,74:0.08813481691):0.02337633701):0.03937299235):0.02757958653,82:0.3424637328):0.09389204395,((183:0.07471365466,(((184:0.1032963087,185:0.04329630872):0.01458747709,(187:0.03685566531,188:0.03185566531):0.1220281205):0.02257321635,186:0.07545700215):0.002256652508):0.02992793608,189:0.1946415907):0.07471418601):0.001470135143,297:0.2358259119):0.002411791526):0.02618846988,(235:0.1299844157,(237:0.07019972828,239:0.2291997283):0.01278468738):0.08744175764):0.0262702821):0.002310712177,261:0.2270071676):0.04550315281,(85:0.02697859442,92:0.04597859442):0.130531726):0.03038605656,((8:0.0247651438,10:0.0467651438):0.141844357,(179:0.08259972183,(191:0.02956251688,192:0.03256251688):0.02803720495):0.145009779):0.004286876105):0.006904313721,((((3:0.1218312955,(51:0.07554154879,52:0.07354154879):0.08428974672):0.003473800868,(9:0.09157100989,32:0.1335710099):0.01973408649):0.02681419224,((44:0.06215487478,96:0.1251548748):0.02671963792,((59:0.03149284468,61:0.04549284468):0.1152302728,88:0.09772311743):0.01615139527):0.04924477591):0.0275144086,((((5:0.1869500013,194:0.2639500013):0.06081078196,(47:0.02441835328,(48:0.03572895802,49:0.03272895802):0.007689395262):0.16334243):0.008961524292,(((17:0.3125114567,((39:0.03169062686,40:0.04569062686):0.08800760546,116:0.1396982323):0.005813224406):0.008906374684,(62:0.1272684658,86:0.1032684658):0.00714936565):0.00171686865,109:0.1501347001):0.04358760752):0.001581826746,(84:0.05761294142,108:0.1236129414):0.0666911929):0.006329562894):0.05316699345):0.01722275093,(((((((((((((((2:0.1853333592,(((((54:0.1630623837,57:0.1820623837):0.04863745787,((177:0.228246405,281:0.204246405):0.009581756836,303:0.2548281618):0.03087167974):0.00830879738,(56:0.2060865458,(262:0.02183694097,(273:0.01821394738,302:0.1012139474):0.04462299359):0.08824960481):0.01092209317):0.09893625902,153:0.408944898):0.1346393251,72:0.258584223):0.09574913613):0.02237236687,(124:0.1448176025,((((132:0.02326297295,135:0.04526297295):0.002425861393,133:0.02368883435):0.1186891413,148:0.5203779756):0.01416386212,(139:0.01218388155,141:0.08118388155):0.1793579562):0.005275764713):0.001888123554):0.001442872178,112:0.08014859821):0.0004998758545,110:0.07464847406):0.001352153936,113:0.079000628):0.0006830083935,((58:0.1701253877,(130:0.0519993917,(265:0.02227915033,275:0.01127915033):0.3937202414):0.05812599598):0.008091283437,125:0.1452166711):0.008466965273):0.0003353279004,((127:0.04129630444,207:0.3042963044):0.0374378067,(129:0.02737236577,134:0.09837236577):0.02636174537):0.07028485315):0.0009135115886,(((53:0.08824611541,(98:0.1656692157,101:0.3436692157):0.01257689969):0.06181026469,(115:0.06376151654,121:0.1207615165):0.01229486357):0.004409667342,((((((99:0.03725857284,103:0.04025857284):0.04739573339,(104:0.04453074424,105:0.04753074424):0.05612356199):0.07775183108,((149:0.2521235738,267:0.3501235738):0.006252355138,(161:0.1322187651,230:0.2582187651):0.07615716383):0.02503020836):0.02115341857,163:0.3095595559):0.1233535723,220:0.3369131281):0.1073826311,((203:0.06411171845,205:0.07711171845):0.182704105,(240:0.1558755829,280:0.03587558294):0.04394024055):0.05547993574):0.01117028822):0.003466428436):0.0005807452842,(((((((26:0.3202885021,126:0.1142885021):0.01595222819,118:0.1162407303):0.006369251453,(120:0.1106669531,202:0.2776669531):0.02094302866):0.001652079087,(137:0.08784213407,((((146:0.1671659562,147:0.1891659562):0.1528382671,156:0.1690042233):0.01412017823,238:0.0761244015):0.06496958735,((154:0.2804360581,231:0.2694360581):0.2465040343,(216:0.04485251833,219:0.05285251833):0.274087574):0.01115389651):0.003748145221):0.1084199268):0.001989391452,107:0.06625145228):0.001296867493,31:0.07554831978):0.0003402144888,(253:0.09520206685,260:0.1442020668):0.3676864674):0.002624686897):0.001333083657,((((((((11:0.04469180056,21:0.1236918006):0.007578549423,((13:0.04994030285,(215:0.04711428542,217:0.05811428542):0.1948260174):0.01350372286,(((23:0.0627006715,((((24:0.01567789093,29:0.05367789093):0.02922334857,28:0.0699012395):0.001740013628,151:0.2656412531):0.01762208421,(55:0.209234233,(181:0.1324038456,234:0.2424038456):0.09283038742):0.01402910434):0.02043733416):0.002585225872,180:0.2382858974):0.03731489986,(((((152:0.330322634,182:0.273322634):0.01988917174,((229:0.178272298,(271:0.050094468,307:0.091094468):0.005177829958):0.06013342638,255:0.1454057243):0.09780608146):0.01124352562,((173:0.2078369254,224:0.1368369254):0.1356667268,268:0.3025036522):0.01495167922):0.009873325097,(214:0.1071610018,(227:0.2486718024,233:0.3146718024):0.02048919937):0.06416765473):0.0009799215175,226:0.304308578):0.004292219203):0.07584322848):0.007826324274):0.07802657226,30:0.3742969222):0.09186693416,((((((60:0.08258811062,209:0.2335881106):0.009117303637,(196:0.04375254976,198:0.06275254976):0.003952864503):0.01754235238,195:0.06224776664):0.04030553423,(193:0.06146139423,((201:0.1099317726,211:0.2499317726):0.01026591091,221:0.3831976835):0.03126371074):0.01709190665):0.005793083741,199:0.1693463846):0.100006672,122:0.1183530566):0.007810799762):0.002565668072,((((15:0.09508991434,(16:0.09257825477,301:0.2595782548):0.02251165957):0.02549558516,19:0.1425854995):0.0418718561,(((164:0.07805998244,(166:0.04179545204,171:0.05779545204):0.0472645304):0.002974148758,165:0.0890341312):0.003876292572,168:0.1009104238):0.3905469318):0.001203258566,(((162:0.08772336126,(167:0.1097196577,(169:0.06326746976,170:0.06926746976):0.05745218798):0.008003703516):0.005562236171,172:0.1512855974):0.04536020619,(247:0.1258110778,272:0.06281107775):0.05183472586):0.3210148106):0.08806891031):0.001133282704,(123:0.03087603602,138:0.09087603602):0.1019867712):0.002971340181,((((((12:0.04528863226,(277:0.04987697954,283:0.02287697954):0.2584116527):0.01365808931,27:0.03994672157):0.04499895366,(((20:0.1035730612,(174:0.1862520539,225:0.3812520539):0.007321007223):0.005625329845,(178:0.4301633334,206:0.1941633334):0.01103505759):0.03455875801,210:0.288757149):0.00718852622):0.1239811207,((140:0.2052016873,(142:0.02975508565,144:0.03875508565):0.3834466017):0.02178436331,(145:0.3772760176,((((((150:0.3495661267,249:0.4725661267):0.01864184053,232:0.5162079672):0.02564564455,294:0.4098536117):0.042829387,251:0.4176829987):0.03673774924,((213:0.1949610398,(284:0.2665851416,295:0.09658514156):0.1263758983):0.01429666961,223:0.3332577094):0.1921630386):0.002785017384,197:0.2072057654):0.003070252242):0.01671003303):0.003940745257):0.001822766375,41:0.07174956227):0.001882056335,(106:0.1523847329,157:0.3383847329):0.05224688574):0.002202528759):0.0003584318836,(((((14:0.1333066847,(((25:0.09623597825,((250:0.09212831299,258:0.267128313):0.004483962839,293:0.05761227583):0.1176237024):0.05168641459,228:0.3889223928):0.07700794185,143:0.3069303347):0.009376349984):0.01044441718,(18:0.1347936257,68:0.2527936257):0.01095747613):0.04119211233,((128:0.04999880773,131:0.06899880773):0.004477953782,((158:0.2221754583,(263:0.03416675922,300:0.03716675922):0.2940086991):0.03602604143,289:0.4442014998):0.04327526174):0.02046645268):0.06333599723,119:0.1222792114):0.01028059111,(114:0.07438396227,136:0.1653839623):0.01917584026):0.006632776713):0.00165372557):0.0005686471566,111:0.07541495198):0.05672177925,(4:0.1214501965,6:0.1274501965):0.07868653475):0.02648888961,(((((7:0.1904259826,22:0.2234259826):0.05546741605,((((((((43:0.02466129256,45:0.04866129256):0.07069364654,((245:0.1931261827,(256:0.1605400384,((259:0.06113671633,(304:0.02483982929,306:0.08483982929):0.04729688703):0.08143808634,299:0.1145748027):0.02096523572):0.002586144306):0.002301739749,((264:0.01455681894,276:0.04755681894):0.008027014698,285:0.01958383364):0.0578440888):0.0009270166581):0.0004116225738,282:0.06776656167):0.003169600509,((((244:0.08702659764,254:0.03002659764):0.01570980614,290:0.05073640377):0.04193337044,279:0.07966977421):0.00678138728,(((((246:0.07053097793,248:0.05953097793):0.01131693485,257:0.1448479128):0.008113834072,270:0.1009617468):0.006792734687,286:0.07275448153):0.003127941512,(((252:0.04179008108,305:0.1457900811):0.06101649845,274:0.1678065795):0.007563567521,288:0.1643701471):0.006512275989):0.00256873845):0.00148500069):0.0002306185285,((266:0.02515866525,(278:0.1385104474,298:0.05351044742):0.02364821783):0.005308998632,296:0.08746766388):0.06869911683):0.01991894165,94:0.1190857224):0.001681844218,93:0.1177675666):0.05348894875,87:0.1222565153):0.006636883352):0.002556217264,90:0.1554496159):0.003343291987,((((((((33:0.01514949802,38:0.04214949802):0.003025657584,34:0.02317515561):0.02351487346,35:0.04369002907):0.01742307952,(50:0.1647125061,(242:0.04611093221,243:0.06811093221):0.05760157389):0.009400602494):0.0004527504646,175:0.1305658591):0.02190016877,36:0.1024660278):0.02190509979,(((117:0.04727665549,((200:0.144584355,212:0.289584355):0.06470891058,(218:0.3280326961,269:0.5360326961):0.04826056948):0.007983389908):0.008236311344,190:0.1565129668):0.002380810283,(((155:0.01521023074,160:0.07321023074):0.02717618582,159:0.02038641656):0.1718582899,(208:0.04206917204,222:0.179069172):0.2081755344):0.1086490706):0.0234773505):0.1035089331,((95:0.1216113439,(100:0.105136259,102:0.110136259):0.3594750849):0.003175479653,291:0.2537868236):0.05409323717):0.0129128472):0.0007165002264,91:0.1625094082):0.004116212675):0.02255986119,((97:0.3061039595,176:0.7061039595):0.005466991594,204:0.4155709511):0.01761453096):0.0513798814,89:0.2355653634):0.03145807816):0;"/>
+
+  <function spec="beast.core.util.Slice" id="deathRate1" arg="@death" index="0" count="1"/>
+  <function spec="beast.core.util.Slice" id="deathRate2" arg="@death" index="1" count="1"/>
+
+  <function spec="beast.core.util.Slice" id="samplingProportion1" arg="@samplingProportion" index="0" count="1"/>
+  <function spec="beast.core.util.Slice" id="samplingProportion2" arg="@samplingProportion" index="1" count="1"/>
+
+
+	<BDSIR spec="beast.phylodynamics.BDSIR" id="birthDeath" tree="@tree" dS="@dS" dR="@dR" checkTreeConsistent="false">
+		<parameter name="origin" id="origin" value="30"/>
+		<parameter name="reproductiveNumber" id="reproductiveNumber" value="1.5" lower="0." upper="10."/>
+		<parameter name="becomeUninfectiousRate" id="becomeUninfectiousRate" value="1" lower="0."/>
+		<parameter name="samplingProportion" id="samplingProportion" value="0.001 0.2" lower="0." upper="1." dimension="2"/>
+		<parameter name="S0" id="S0" value="500000" lower="1"/>
+
+		
+		<samplingRateChangeTimes spec="beast.core.parameter.RealParameter" value="0.0 0.66"/>
+		<deathRateChangeTimes spec="beast.core.parameter.RealParameter" value="0.0 0.66"/>
+		<reverseTimeArrays spec="beast.core.parameter.BooleanParameter" value="false true true false false"/>
+	
+	</BDSIR>
+
+	<SIR spec="HybridSEIREpidemic" id="SIR" S0="@S0" Nt="10001" Nsamples="101" origin="@origin" birth="@birth" death="@death" sampling="@sampling" simulationType="SAL"/>
+
+
+        
+	<RPNcalculator spec="beast.math.statistic.RPNcalculator" id="birth" expression="reproductiveNumber S0 / becomeUninfectiousRate *"> <!-- s/(d+s) -->
+		<parameter idref="becomeUninfectiousRate"/>
+		<parameter idref="reproductiveNumber"/>
+		<parameter idref="S0"/>
+	</RPNcalculator>
+	<RPNcalculator spec="beast.math.statistic.RPNcalculator" id="sampling" expression="becomeUninfectiousRate samplingProportion *">
+		<parameter idref="becomeUninfectiousRate"/>
+		<parameter idref="samplingProportion"/>
+	</RPNcalculator>
+	<RPNcalculator spec="beast.math.statistic.RPNcalculator" id="death" expression="becomeUninfectiousRate 1 samplingProportion - *">
+		<parameter idref="becomeUninfectiousRate"/>
+		<parameter idref="samplingProportion"/>
+	</RPNcalculator>
+
+	<distribution id="posterior" spec="util.CompoundDistribution">
+	  <distribution idref="birthDeath"/>
+
+	  <distribution id="prior" spec="util.CompoundDistribution">
+	    <distribution id="S0_prior" spec="beast.math.distributions.Prior" x="@S0">
+	      <distr spec="beast.math.distributions.Uniform" lower="0" upper="1E8"/>
+	    </distribution>
+	    <distribution id="becomeUninfectious_prior" spec="beast.math.distributions.Prior" x="@becomeUninfectiousRate">
+	      <distr spec="beast.math.distributions.Normal" mean="91" sigma="5"/>
+	    </distribution>
+	    <!--distribution id="death1_prior" spec="beast.math.distributions.Prior" x="@deathRate1">
+	      <distr spec="beast.math.distributions.Normal" mean="1" sigma="0.001"/>
+	    </distribution-->
+
+	    <distribution id="samplingOnePrior" spec="beast.math.distributions.Prior" x="@samplingProportion1">
+	      <distr spec="beast.math.distributions.Exponential" mean="0.0001"/>
+	    </distribution>
+
+            
+            <!--prior id="samplingIntervalOnePrior" name="distribution" x="@samplingProportion1">
+              <Normal id="Normal0" name="distr" mean="0.001" sigma="0.0001"/>
+            </prior>
+
+            <prior id="samplingIntervalTwoPrior" name="distribution" x="@samplingProportion2">
+              <Normal id="Normal1" name="distr" mean="0.5" sigma="0.01"/>
+            </prior-->
+
+	    <!--distribution id="death_prior" spec="beast.math.distributions.Prior" x="@death">
+	      <distr spec="beast.math.distributions.Normal" mean="0.8" sigma="0.01"/>
+	    </distribution-->
+	    
+	    <!--prior id="death_prior" name="distribution" x="@death">
+	      <Normal id="normaldistro1" name="distr" mean="0.8" sigma="0.01"/>
+	    </prior-->
+	    <!--prior id="S0_prior" name="distribution" x="@S0">
+	      <Uniform id="Uniform.01" name="distr" lower="0" upper="1000000"/>
+	    </prior-->
+	  </distribution>
+
+	</distribution>
+		<!--
+		<distribution id="reproductiveNumber_prior" spec="beast.math.distributions.Prior" x="@reproductiveNumber">
+			<distr spec="beast.math.distributions.LogNormalDistributionModel" M="1." S="1." offset="0."/>
+		</distribution>
+		<distribution id="becomeUninf_prior" spec="beast.math.distributions.Prior" x="@becomeUninfectiousRate">
+			<distr spec="beast.math.distributions.LogNormalDistributionModel" M="0" S="1." offset="0."/>
+		</distribution>
+		<distribution id="samplingProportion_prior" spec="beast.math.distributions.Prior" x="@samplingProportion">
+			<distr spec="beast.math.distributions.Beta" alpha="2." beta="8." offset="0."/>
+			</distribution>
+		-->
+
+	<run chainLength="1000000" id="mcmc" spec="MCMC" storeEvery="100">
+
+		<state id="state" storeEvery="100">
+			<stateNode idref="reproductiveNumber"/>
+			<stateNode idref="becomeUninfectiousRate"/>
+			<stateNode idref="samplingProportion"/>
+			<stateNode idref="S0"/>
+			<stateNode idref="dS"/>
+			<stateNode idref="dR"/>
+			<stateNode idref="tree"/>
+			<stateNode idref="origin"/>
+		</state>
+
+		<distribution idref="posterior"/>
+
+		<operator spec="CompoundSIROperator" id="SIR_reproductiveNumber_operator"  weight="1" tree="@tree"
+		origin='@origin' birth="@birth" death="@death" sampling="@sampling" S0="@S0">
+			<SIR idref="SIR"/>
+			<dS spec="RealParameter" id="dS" value="0" dimension="100"/> <!-- will be initialised in operator -->
+			<dR spec="RealParameter" id="dR" value="0" dimension="100"/> <!-- will be initialised in operator -->
+			<affectingOperator id='reproductiveNumberOperator' spec='ScaleOperator' scaleFactor=".75" weight="1" parameter="@reproductiveNumber"/>
+		</operator>
+
+		<operator spec="CompoundSIROperator" id="SIR_S0_operator"  weight="1" tree="@tree" SIR="@SIR"
+		origin='@origin' birth="@birth" death="@death" sampling="@sampling" S0="@S0" dS="@dS" dR="@dR">
+			<affectingOperator id='becomeUninfectiousOperator' spec='ScaleOperator' scaleFactor=".75" weight="10" parameter="@becomeUninfectiousRate"/>
+		</operator>
+
+		<operator spec="CompoundSIROperator" id="SIR_samplingProportion_operator"  weight="1" tree="@tree" SIR="@SIR"
+		origin='@origin' birth="@birth" death="@death" sampling="@sampling" S0="@S0" dS="@dS" dR="@dR">
+			<affectingOperator id='samplingProportionOperator' spec='ScaleOperator' scaleFactor=".7" weight="1" parameter="@samplingProportion"/>
+		</operator>
+
+		<operator spec="CompoundSIROperator" id="SIR_updown1_operator"  weight="1" tree="@tree" SIR="@SIR"
+		origin='@origin' birth="@birth" death="@death" sampling="@sampling" S0="@S0" dS="@dS" dR="@dR">
+			<affectingOperator id="updown1" spec="UpDownOperator" scaleFactor=".75" weight="1" up="@reproductiveNumber" down="@becomeUninfectiousRate"/>
+		</operator>
+
+		<!--operator spec="CompoundSIROperator" id="SIR_updown2_operator"  weight="1" tree="@tree" SIR="@SIR"
+		origin='@origin' birth="@birth" death="@death" sampling="@sampling" S0="@S0" dS="@dS" dR="@dR">
+			<affectingOperator id="updown2" spec="UpDownOperator" scaleFactor=".75" weight="1" up="@reproductiveNumber" down="@samplingProportion"/>
+		</operator-->
+
+		<!--operator spec="CompoundSIROperator" id="SIR_updown3_operator"  weight="1" tree="@tree" SIR="@SIR"
+		origin='@origin' birth="@birth" death="@death" sampling="@sampling" S0="@S0" dS="@dS" dR="@dR">
+			<affectingOperator id="updown3" spec="UpDownOperator" scaleFactor=".95" weight="1" up="@reproductiveNumber" down="@S0"/>
+		</operator-->
+
+		<operator id="SIR_origin_operatorEs" spec="beast.phylodynamics.epidemiology.CompoundSIROperator" S0="@S0" SIR="@SIR" birth="@birth" dR="@dR" dS="@dS" death="@death" origin="@origin" sampling="@sampling" tree="@tree" weight="3.0">
+        <affectingOperator id="originOperator" spec="ScaleOperator" parameter="@origin" scaleFactor="0.1" weight="3.0"/>
+    </operator>
+
+		<logger fileName="BDSIR_sampling_cut_times.log" id="log" logEvery="1000" mode="autodetect" model="@posterior">
+			<log idref="posterior"/>
+			<log idref="prior"/>
+			<log idref="birthDeath"/>
+			<log idref="reproductiveNumber"/>
+			<log idref="becomeUninfectiousRate"/>
+			<log idref="samplingProportion"/>
+			<log idref="birth"/>
+			<log idref="death"/>
+			<log idref="sampling"/>
+			<log idref="S0"/>
+			<log idref="dS"/>
+			<log idref="dR"/>
+			<log idref="SIR"/>
+			<log idref="origin"/>
+			<log id="treeHeight" spec="beast.evolution.tree.TreeHeightLogger" tree="@tree"/>
+		</logger>
+
+		<logger id="screenlog" logEvery="500" mode="autodetect">
+			<distribution idref="posterior" name="log"/>
+			<log arg="@posterior" id="ESS.0" spec="util.ESS"/>
+			<log idref="reproductiveNumber"/>
+			<log idref="becomeUninfectiousRate"/>
+			<log idref="samplingProportion"/>
+			<log idref="birth"/>
+			<log idref="death"/>
+			<!--log idref="sampling"/-->
+			<!--log idref="S0"/-->
+			<log idref="origin"/>
+			<log idref="birthDeath"/>
+			<!--log idref="deathRate1"/-->
+			<!--log idref="deathRate2"/-->
+			<!--
+			<log idref="dS"/>
+			<log idref="dR"/>
+			<log idref="SIR"/>
+			-->
+
+
+		</logger>
+	</run>
+
+</beast>

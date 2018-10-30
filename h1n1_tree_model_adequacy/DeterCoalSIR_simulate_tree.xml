@@ -1,0 +1,708 @@
+
+<beast version ='2.0' namespace ='
+	beast.evolution.tree
+	:beast.evolution.alignment
+	:beast.phylodynamics.epidemiology
+	:beast.core.parameter
+	:master
+        :master.steppers
+        :master.model
+        :master.conditions
+        :master.outputs'>
+
+  <taxonset id='taxa' spec='TaxonSet'>
+    <taxon id="1" spec="Taxon"/>
+<taxon id="37" spec="Taxon"/>
+<taxon id="241" spec="Taxon"/>
+<taxon id="46" spec="Taxon"/>
+<taxon id="236" spec="Taxon"/>
+<taxon id="42" spec="Taxon"/>
+<taxon id="75" spec="Taxon"/>
+<taxon id="77" spec="Taxon"/>
+<taxon id="287" spec="Taxon"/>
+<taxon id="292" spec="Taxon"/>
+<taxon id="63" spec="Taxon"/>
+<taxon id="83" spec="Taxon"/>
+<taxon id="73" spec="Taxon"/>
+<taxon id="80" spec="Taxon"/>
+<taxon id="81" spec="Taxon"/>
+<taxon id="64" spec="Taxon"/>
+<taxon id="67" spec="Taxon"/>
+<taxon id="78" spec="Taxon"/>
+<taxon id="79" spec="Taxon"/>
+<taxon id="65" spec="Taxon"/>
+<taxon id="66" spec="Taxon"/>
+<taxon id="76" spec="Taxon"/>
+<taxon id="71" spec="Taxon"/>
+<taxon id="69" spec="Taxon"/>
+<taxon id="70" spec="Taxon"/>
+<taxon id="74" spec="Taxon"/>
+<taxon id="82" spec="Taxon"/>
+<taxon id="183" spec="Taxon"/>
+<taxon id="184" spec="Taxon"/>
+<taxon id="185" spec="Taxon"/>
+<taxon id="187" spec="Taxon"/>
+<taxon id="188" spec="Taxon"/>
+<taxon id="186" spec="Taxon"/>
+<taxon id="189" spec="Taxon"/>
+<taxon id="297" spec="Taxon"/>
+<taxon id="235" spec="Taxon"/>
+<taxon id="237" spec="Taxon"/>
+<taxon id="239" spec="Taxon"/>
+<taxon id="261" spec="Taxon"/>
+<taxon id="85" spec="Taxon"/>
+<taxon id="92" spec="Taxon"/>
+<taxon id="8" spec="Taxon"/>
+<taxon id="10" spec="Taxon"/>
+<taxon id="179" spec="Taxon"/>
+<taxon id="191" spec="Taxon"/>
+<taxon id="192" spec="Taxon"/>
+<taxon id="3" spec="Taxon"/>
+<taxon id="51" spec="Taxon"/>
+<taxon id="52" spec="Taxon"/>
+<taxon id="9" spec="Taxon"/>
+<taxon id="32" spec="Taxon"/>
+<taxon id="44" spec="Taxon"/>
+<taxon id="96" spec="Taxon"/>
+<taxon id="59" spec="Taxon"/>
+<taxon id="61" spec="Taxon"/>
+<taxon id="88" spec="Taxon"/>
+<taxon id="5" spec="Taxon"/>
+<taxon id="194" spec="Taxon"/>
+<taxon id="47" spec="Taxon"/>
+<taxon id="48" spec="Taxon"/>
+<taxon id="49" spec="Taxon"/>
+<taxon id="17" spec="Taxon"/>
+<taxon id="39" spec="Taxon"/>
+<taxon id="40" spec="Taxon"/>
+<taxon id="116" spec="Taxon"/>
+<taxon id="62" spec="Taxon"/>
+<taxon id="86" spec="Taxon"/>
+<taxon id="109" spec="Taxon"/>
+<taxon id="84" spec="Taxon"/>
+<taxon id="108" spec="Taxon"/>
+<taxon id="2" spec="Taxon"/>
+<taxon id="54" spec="Taxon"/>
+<taxon id="57" spec="Taxon"/>
+<taxon id="177" spec="Taxon"/>
+<taxon id="281" spec="Taxon"/>
+<taxon id="303" spec="Taxon"/>
+<taxon id="56" spec="Taxon"/>
+<taxon id="262" spec="Taxon"/>
+<taxon id="273" spec="Taxon"/>
+<taxon id="302" spec="Taxon"/>
+<taxon id="153" spec="Taxon"/>
+<taxon id="72" spec="Taxon"/>
+<taxon id="124" spec="Taxon"/>
+<taxon id="132" spec="Taxon"/>
+<taxon id="135" spec="Taxon"/>
+<taxon id="133" spec="Taxon"/>
+<taxon id="148" spec="Taxon"/>
+<taxon id="139" spec="Taxon"/>
+<taxon id="141" spec="Taxon"/>
+<taxon id="112" spec="Taxon"/>
+<taxon id="110" spec="Taxon"/>
+<taxon id="113" spec="Taxon"/>
+<taxon id="58" spec="Taxon"/>
+<taxon id="130" spec="Taxon"/>
+<taxon id="265" spec="Taxon"/>
+<taxon id="275" spec="Taxon"/>
+<taxon id="125" spec="Taxon"/>
+<taxon id="127" spec="Taxon"/>
+<taxon id="207" spec="Taxon"/>
+<taxon id="129" spec="Taxon"/>
+<taxon id="134" spec="Taxon"/>
+<taxon id="53" spec="Taxon"/>
+<taxon id="98" spec="Taxon"/>
+<taxon id="101" spec="Taxon"/>
+<taxon id="115" spec="Taxon"/>
+<taxon id="121" spec="Taxon"/>
+<taxon id="99" spec="Taxon"/>
+<taxon id="103" spec="Taxon"/>
+<taxon id="104" spec="Taxon"/>
+<taxon id="105" spec="Taxon"/>
+<taxon id="149" spec="Taxon"/>
+<taxon id="267" spec="Taxon"/>
+<taxon id="161" spec="Taxon"/>
+<taxon id="230" spec="Taxon"/>
+<taxon id="163" spec="Taxon"/>
+<taxon id="220" spec="Taxon"/>
+<taxon id="203" spec="Taxon"/>
+<taxon id="205" spec="Taxon"/>
+<taxon id="240" spec="Taxon"/>
+<taxon id="280" spec="Taxon"/>
+<taxon id="26" spec="Taxon"/>
+<taxon id="126" spec="Taxon"/>
+<taxon id="118" spec="Taxon"/>
+<taxon id="120" spec="Taxon"/>
+<taxon id="202" spec="Taxon"/>
+<taxon id="137" spec="Taxon"/>
+<taxon id="146" spec="Taxon"/>
+<taxon id="147" spec="Taxon"/>
+<taxon id="156" spec="Taxon"/>
+<taxon id="238" spec="Taxon"/>
+<taxon id="154" spec="Taxon"/>
+<taxon id="231" spec="Taxon"/>
+<taxon id="216" spec="Taxon"/>
+<taxon id="219" spec="Taxon"/>
+<taxon id="107" spec="Taxon"/>
+<taxon id="31" spec="Taxon"/>
+<taxon id="253" spec="Taxon"/>
+<taxon id="260" spec="Taxon"/>
+<taxon id="11" spec="Taxon"/>
+<taxon id="21" spec="Taxon"/>
+<taxon id="13" spec="Taxon"/>
+<taxon id="215" spec="Taxon"/>
+<taxon id="217" spec="Taxon"/>
+<taxon id="23" spec="Taxon"/>
+<taxon id="24" spec="Taxon"/>
+<taxon id="29" spec="Taxon"/>
+<taxon id="28" spec="Taxon"/>
+<taxon id="151" spec="Taxon"/>
+<taxon id="55" spec="Taxon"/>
+<taxon id="181" spec="Taxon"/>
+<taxon id="234" spec="Taxon"/>
+<taxon id="180" spec="Taxon"/>
+<taxon id="152" spec="Taxon"/>
+<taxon id="182" spec="Taxon"/>
+<taxon id="229" spec="Taxon"/>
+<taxon id="271" spec="Taxon"/>
+<taxon id="307" spec="Taxon"/>
+<taxon id="255" spec="Taxon"/>
+<taxon id="173" spec="Taxon"/>
+<taxon id="224" spec="Taxon"/>
+<taxon id="268" spec="Taxon"/>
+<taxon id="214" spec="Taxon"/>
+<taxon id="227" spec="Taxon"/>
+<taxon id="233" spec="Taxon"/>
+<taxon id="226" spec="Taxon"/>
+<taxon id="30" spec="Taxon"/>
+<taxon id="60" spec="Taxon"/>
+<taxon id="209" spec="Taxon"/>
+<taxon id="196" spec="Taxon"/>
+<taxon id="198" spec="Taxon"/>
+<taxon id="195" spec="Taxon"/>
+<taxon id="193" spec="Taxon"/>
+<taxon id="201" spec="Taxon"/>
+<taxon id="211" spec="Taxon"/>
+<taxon id="221" spec="Taxon"/>
+<taxon id="199" spec="Taxon"/>
+<taxon id="122" spec="Taxon"/>
+<taxon id="15" spec="Taxon"/>
+<taxon id="16" spec="Taxon"/>
+<taxon id="301" spec="Taxon"/>
+<taxon id="19" spec="Taxon"/>
+<taxon id="164" spec="Taxon"/>
+<taxon id="166" spec="Taxon"/>
+<taxon id="171" spec="Taxon"/>
+<taxon id="165" spec="Taxon"/>
+<taxon id="168" spec="Taxon"/>
+<taxon id="162" spec="Taxon"/>
+<taxon id="167" spec="Taxon"/>
+<taxon id="169" spec="Taxon"/>
+<taxon id="170" spec="Taxon"/>
+<taxon id="172" spec="Taxon"/>
+<taxon id="247" spec="Taxon"/>
+<taxon id="272" spec="Taxon"/>
+<taxon id="123" spec="Taxon"/>
+<taxon id="138" spec="Taxon"/>
+<taxon id="12" spec="Taxon"/>
+<taxon id="277" spec="Taxon"/>
+<taxon id="283" spec="Taxon"/>
+<taxon id="27" spec="Taxon"/>
+<taxon id="20" spec="Taxon"/>
+<taxon id="174" spec="Taxon"/>
+<taxon id="225" spec="Taxon"/>
+<taxon id="178" spec="Taxon"/>
+<taxon id="206" spec="Taxon"/>
+<taxon id="210" spec="Taxon"/>
+<taxon id="140" spec="Taxon"/>
+<taxon id="142" spec="Taxon"/>
+<taxon id="144" spec="Taxon"/>
+<taxon id="145" spec="Taxon"/>
+<taxon id="150" spec="Taxon"/>
+<taxon id="249" spec="Taxon"/>
+<taxon id="232" spec="Taxon"/>
+<taxon id="294" spec="Taxon"/>
+<taxon id="251" spec="Taxon"/>
+<taxon id="213" spec="Taxon"/>
+<taxon id="284" spec="Taxon"/>
+<taxon id="295" spec="Taxon"/>
+<taxon id="223" spec="Taxon"/>
+<taxon id="197" spec="Taxon"/>
+<taxon id="41" spec="Taxon"/>
+<taxon id="106" spec="Taxon"/>
+<taxon id="157" spec="Taxon"/>
+<taxon id="14" spec="Taxon"/>
+<taxon id="25" spec="Taxon"/>
+<taxon id="250" spec="Taxon"/>
+<taxon id="258" spec="Taxon"/>
+<taxon id="293" spec="Taxon"/>
+<taxon id="228" spec="Taxon"/>
+<taxon id="143" spec="Taxon"/>
+<taxon id="18" spec="Taxon"/>
+<taxon id="68" spec="Taxon"/>
+<taxon id="128" spec="Taxon"/>
+<taxon id="131" spec="Taxon"/>
+<taxon id="158" spec="Taxon"/>
+<taxon id="263" spec="Taxon"/>
+<taxon id="300" spec="Taxon"/>
+<taxon id="289" spec="Taxon"/>
+<taxon id="119" spec="Taxon"/>
+<taxon id="114" spec="Taxon"/>
+<taxon id="136" spec="Taxon"/>
+<taxon id="111" spec="Taxon"/>
+<taxon id="4" spec="Taxon"/>
+<taxon id="6" spec="Taxon"/>
+<taxon id="7" spec="Taxon"/>
+<taxon id="22" spec="Taxon"/>
+<taxon id="43" spec="Taxon"/>
+<taxon id="45" spec="Taxon"/>
+<taxon id="245" spec="Taxon"/>
+<taxon id="256" spec="Taxon"/>
+<taxon id="259" spec="Taxon"/>
+<taxon id="304" spec="Taxon"/>
+<taxon id="306" spec="Taxon"/>
+<taxon id="299" spec="Taxon"/>
+<taxon id="264" spec="Taxon"/>
+<taxon id="276" spec="Taxon"/>
+<taxon id="285" spec="Taxon"/>
+<taxon id="282" spec="Taxon"/>
+<taxon id="244" spec="Taxon"/>
+<taxon id="254" spec="Taxon"/>
+<taxon id="290" spec="Taxon"/>
+<taxon id="279" spec="Taxon"/>
+<taxon id="246" spec="Taxon"/>
+<taxon id="248" spec="Taxon"/>
+<taxon id="257" spec="Taxon"/>
+<taxon id="270" spec="Taxon"/>
+<taxon id="286" spec="Taxon"/>
+<taxon id="252" spec="Taxon"/>
+<taxon id="305" spec="Taxon"/>
+<taxon id="274" spec="Taxon"/>
+<taxon id="288" spec="Taxon"/>
+<taxon id="266" spec="Taxon"/>
+<taxon id="278" spec="Taxon"/>
+<taxon id="298" spec="Taxon"/>
+<taxon id="296" spec="Taxon"/>
+<taxon id="94" spec="Taxon"/>
+<taxon id="93" spec="Taxon"/>
+<taxon id="87" spec="Taxon"/>
+<taxon id="90" spec="Taxon"/>
+<taxon id="33" spec="Taxon"/>
+<taxon id="38" spec="Taxon"/>
+<taxon id="34" spec="Taxon"/>
+<taxon id="35" spec="Taxon"/>
+<taxon id="50" spec="Taxon"/>
+<taxon id="242" spec="Taxon"/>
+<taxon id="243" spec="Taxon"/>
+<taxon id="175" spec="Taxon"/>
+<taxon id="36" spec="Taxon"/>
+<taxon id="117" spec="Taxon"/>
+<taxon id="200" spec="Taxon"/>
+<taxon id="212" spec="Taxon"/>
+<taxon id="218" spec="Taxon"/>
+<taxon id="269" spec="Taxon"/>
+<taxon id="190" spec="Taxon"/>
+<taxon id="155" spec="Taxon"/>
+<taxon id="160" spec="Taxon"/>
+<taxon id="159" spec="Taxon"/>
+<taxon id="208" spec="Taxon"/>
+<taxon id="222" spec="Taxon"/>
+<taxon id="95" spec="Taxon"/>
+<taxon id="100" spec="Taxon"/>
+<taxon id="102" spec="Taxon"/>
+<taxon id="291" spec="Taxon"/>
+<taxon id="91" spec="Taxon"/>
+<taxon id="97" spec="Taxon"/>
+<taxon id="176" spec="Taxon"/>
+<taxon id="204" spec="Taxon"/>
+<taxon id="89" spec="Taxon"/>
+
+		<!--taxon id='t1' spec='Taxon'/>
+		<taxon id='t2' spec='Taxon'/>
+		<taxon id='t3' spec='Taxon'/>
+		<taxon id='t4' spec='Taxon'/>
+		<taxon id='t5' spec='Taxon'/>
+		<taxon id='t6' spec='Taxon'/>
+		<taxon id='t7' spec='Taxon'/>
+		<taxon id='t8' spec='Taxon'/>
+		<taxon id='t9' spec='Taxon'/>
+		<taxon id='t10' spec='Taxon'/>
+		<taxon id='t11' spec='Taxon'/>
+		<taxon id='t12' spec='Taxon'/>
+		<taxon id='t13' spec='Taxon'/>
+		<taxon id='t14' spec='Taxon'/>
+		<taxon id='t15' spec='Taxon'/>
+		<taxon id='t16' spec='Taxon'/>
+		<taxon id='t17' spec='Taxon'/>
+		<taxon id='t18' spec='Taxon'/>
+		<taxon id='t19' spec='Taxon'/>
+		<taxon id='t20' spec='Taxon'/-->
+	</taxonset>
+
+	<trait id='tipDates' spec='TraitSet' traitname='date-backward'>
+1=0.6080000000052,
+2=0.5069999999632,
+3=0.4929999999632,
+4=0.5750000000052,
+5=0.5200000000052,
+6=0.5970000000002,
+7=0.2929999999702,
+8=0.4660000000352,
+9=0.4600000000352,
+10=0.5039999999852,
+11=0.4220000000002,
+12=0.4680000000002,
+13=0.4440000000002,
+14=0.4410000000062,
+15=0.4330000000062,
+16=0.4850000000102,
+17=0.4820000000092,
+18=0.4600000000092,
+19=0.4190000000372,
+20=0.4709999999972,
+21=0.4770000000032,
+22=0.4790000000032,
+23=0.4880000000002,
+24=0.4570000000002,
+25=0.4990000000062,
+26=0.4300000000062,
+27=0.2660000000062,
+28=0.5230000000062,
+29=0.4550000000182,
+30=0.5149999999982,
+31=0.4139999999982,
+32=0.4189999999982,
+33=0.5200000000082,
+34=0.4330000000462,
+35=0.4679999999992,
+36=0.5149999999652,
+37=0.5620000000052,
+38=0.4029999999852,
+39=0.5339999999822,
+40=0.6489999999722,
+41=0.6299999999722,
+42=0.6660000000472,
+43=0.6440000000472,
+44=0.6050000000172,
+45=0.6300000000172,
+46=0.6270000000172,
+47=0.6110000000152,
+48=0.5730000000052,
+49=0.5750000000052,
+50=0.6250000000032,
+51=0.5829999999932,
+52=0.6250000000132,
+53=0.5619999999932,
+54=0.5509999999632,
+55=0.5369999999632,
+56=0.6000000000132,
+57=0.5260000000312,
+58=0.4490000000312,
+59=0.5860000000112,
+60=0.5670000000092,
+61=0.5700000000092,
+62=0.4160000000292,
+63=0.6030000000032,
+64=0.5890000000032,
+65=0.5830000000232,
+66=0.6029999999632,
+67=0.6269999999632,
+68=0.5889999999632,
+69=0.6600000000092,
+70=0.5940000000292,
+71=0.4569999999744,
+72=0.0929999999743999,
+73=0.0739999999743999,
+74=0.0359999999683998,
+75=0.0599999999683998,
+76=0.0190000000043998,
+77=0.0959999999543999,
+78=0.1919999999744,
+79=0.1509999999744,
+80=0.0679999999543999,
+81=0.00299999994439992,
+82=0.2880000000444,
+83=0.5179999999904,
+84=0.4990000000144,
+85=0.4770000000144,
+86=0.5010000000074,
+87=0.1230000000574,
+88=0.4660000000274,
+89=0.3970000000274,
+90=0.5860000000124,
+91=0.5920000000169,
+92=0.5890000000129,
+93=0.4819999999964,
+94=0.5420000000164,
+95=0.1779999999864,
+96=0.1889999999864,
+97=0.5150000000334,
+98=0.5200000000168,
+99=0.2570000000568,
+100=0.5450000000168,
+101=0.4740000000168,
+102=0.5120000000174,
+103=0.4220000000374,
+104=0.2440000000374,
+105=0.5860000000074,
+106=0.5290000000474,
+107=0.2409999999594,
+108=0.2379999999594,
+109=0.2249999999594,
+110=0.2219999999594,
+111=0.1199999999714,
+112=0.0219999999713999,
+113=0.1699999999794,
+114=0.0439999999793999,
+115=0.1149999999394,
+116=0.2110000000394,
+117=0.3530000000494,
+118=0.3400000000494,
+119=0.4000000000494,
+120=0.5200000000094,
+121=0.3200000000188,
+122=0.5260000000188,
+123=0.5400000000088,
+124=0.5310000000018,
+125=0.3640000000018,
+126=0.4679999999788,
+127=0.1529999999478,
+128=0.1309999999478,
+129=0.3039999999478,
+130=0.4109999999778,
+131=0.0139999999178,
+132=0.0249999999177999,
+133=0.2219999999878,
+134=0.2139999999878,
+135=0.6000000000208,
+136=0.5920000000138,
+137=0.2050000000326,
+138=0.1560000000826,
+139=0.441000000023,
+140=0.361999999983,
+141=0.422000000022,
+142=0.230000000052,
+143=0.219000000052,
+144=0.30700000002,
+145=0.285000000022,
+146=0.247000000022,
+147=0.260000000022,
+148=0.06600000005,
+149=0.12600000002,
+150=0.11,
+151=0,
+152=0.133999999992,
+153=0.0330000000745,
+154=0.0900000000745,
+155=0.0469999999745,
+156=0.1700000000165,
+157=0.1290000000165,
+158=0.1400000000545,
+159=0.0360000000145,
+160=0.1070000000145,
+161=0.0770000000144999,
+162=0.2330000000015,
+163=0.0710000000315,
+164=0.00500000003150003,
+165=0.101000000049,
+166=0.197000000066,
+167=0.400000000056,
+168=0.249000000076,
+169=0.44400000005,
+170=0.42500000005,
+171=0.447000000053,
+172=0.471000000043,
+173=0.381000000023,
+174=0.241000000023,
+175=0.118000000033,
+176=0.386000000064,
+177=0.537000000064,
+178=0.414000000022,
+179=0.394000000022,
+180=0.226999999992,
+181=0.392000000022,
+182=0.101000000052,
+183=0.0900000000519999,
+184=0.0740000000519999,
+185=0.0930000000499999,
+186=0.0850000000219998,
+187=0.117999999967,
+188=0.0880000000109998,
+189=0.0769999999709999,
+190=0.0709999999709999,
+191=0.0599999999979999,
+192=0.0789999999279999,
+193=0.141999999978,
+194=0.533999999982,
+195=0.473999999982,
+196=0.435999999984,
+197=0.173000000004,
+198=0.200000000004,
+199=0.454999999984,
+200=0.388999999939,
+201=0.299000000016,
+202=0.104000000016,
+203=0.0569999999939999,
+204=0.292999999994,
+205=0.243999999994,
+206=0.433000000047,
+207=0.224999999997,
+208=0.215999999997,
+209=0.266000000027,
+210=0.163999999981,
+211=0.0409999999809999,
+212=0.0160000000109999,
+213=0.148000000061,
+214=0.183000000061,
+215=0.235999999991,
+216=0.0379999998909999,
+217=0.207999999931,
+218=0.112000000001,
+219=0.432999999985,
+220=0.594000000019,
+221=0.462999999984,
+222=0.276999999984,
+223=0.4050000000036,
+224=0.3040000000296,
+225=0.1860000000506,
+226=0.0110000000405999,
+227=0.2250000000496,
+228=0.0630000000695998,
+229=0.2220000000196,
+230=0.4030000000536,
+231=0.2850000000536,
+232=0.5150000000216,
+233=0.4960000000216,
+234=0.2680000000636,
+235=0.1620000000436,
+236=0.1590000000436,
+237=0.0819999999935999,
+238=0.5310000000436,
+239=0.5700000000236,
+240=0.4789999999936,
+241=0.5970000000132,
+242=0.5289999999932,
+243=0.5229999999932,
+244=0.4990000000508,
+245=0.4660000000508,
+246=0.5640000000195,
+247=0.5400000000195,
+248=0.4630000000124,
+249=0.4930000000064,
+250=0.4900000000164,
+251=0.4790000000264,
+252=0.4190000000264,
+253=0.5179999999864,
+254=0.5780000000234,
+255=0.5450000000234,
+256=0.5810000000214,
+257=0.5920000000233,
+258=0.5100000000123,
+259=0.5670000000123,
+260=0.5620000000223,
+261=0.5750000000223,
+262=0.5590000000113,
+263=0.5700000000113,
+264=0.4959999999913,
+265=0.5480000000633,
+266=0.5830000000203,
+267=0.5420000000223,
+268=0.4380000000023,
+269=0.4770000000523,
+270=0.4879999999733,
+271=0.5640000000188,
+272=0.4270000000388,
+273=0.5120000000188,
+274=0.5070000000208,
+275=0.5639999999808,
+276=0.5669999999988,
+277=0.6160000000488,
+278=0.5920000000648,
+279=0.5310000000432,
+280=0.5040000000432,
+281=0.5260000000372,
+282=0.5290000000372,
+283=0.4160000000332,
+284=0.4770000000332,
+285=0.4550000000332,
+286=0.4599999999918,
+287=0.5100000000618,
+288=0.5530000000348,
+289=0.3830000000368,
+290=0.2380000000368,
+291=0.2160000000368,
+292=0.00800000003679979,
+293=0.4520000000688,
+294=0.2880000000918,
+295=0.2300000000918,
+296=0.3100000000918,
+297=0.2520000001118,
+298=0.1150000001518,
+299=0.5590000000288,
+300=0.2160000000288,
+301=0.2110000000288,
+302=0.4299999999818,
+303=0.5889999999782,
+304=0.4489999999892,
+305=0.0489999999891998,
+306=0.3449999999832,
+307=0.5940000000432
+          <taxa idref='taxa'/>
+	</trait>
+
+	<populationFunction spec='PopulationFunctionFromMaster' id='popFun'
+                            origin="ORIGIN"
+                            popSizeExpression="I/(2*LAMBDA*S)"
+                            simulationTime="ORIGIN"
+                            popSizeStart="1.0"
+                            verbosity="3">
+
+          <stepper spec='RateEquationStepper' stepSize="0.01"/>
+          
+          <model spec='Model' id='model'>
+            <population spec='Population' id='S' populationName='S'/>
+            <population spec='Population' id='I' populationName='I'/>
+            <population spec='Population' id='R' populationName='R'/>
+            
+            <reaction spec='Reaction' reactionName="Infection" rate="LAMBDA">
+              S + I -> 2I
+            </reaction>
+            <reaction spec='Reaction' reactionName="Recovery" rate="DELTA">
+              I -> R
+            </reaction>
+          </model>
+          
+          <initialState spec='InitState'>
+            <populationSize spec='PopulationSize' population='@S' size='S0'/>
+            <populationSize spec='PopulationSize' population='@I' size='1'/>
+          </initialState>
+
+          <populationEndCondition spec='PopulationEndCondition' population="@I"
+                                  threshold="0" exceedCondition="false" isRejection="true"/>
+
+          <output spec='JsonOutput' fileName='OUTFILE.json'/>
+
+        </populationFunction>
+
+	<run spec='CoalescentSimulatorBasic'
+             maxHeight="1"
+             replicates='2'>
+
+          <randomTree spec='RandomTree' id="tree">
+            <taxonset idref="taxa"/>
+            <trait idref="tipDates"/>
+            <populationModel idref="popFun"/>
+          </randomTree>
+
+          <logger logEvery="1" fileName="OUTFILE.trees">
+            <log idref="tree"/>
+          </logger>
+
+          <logger logEvery="1" fileName="OUTFILE.log">
+            <log spec="TreeHeightLogger" tree="@tree"/>
+          </logger>
+
+        </run>
+</beast>

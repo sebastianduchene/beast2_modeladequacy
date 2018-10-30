@@ -1,0 +1,93 @@
+<beast version='2.0'
+       namespace='import beast.math.distributions.Prior:beast.util.TreeParser:beast.phylodynamics.epidemiology:master.beast:beast.core:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood:beast.core.parameter:beast.phylodynamics.epidemiology:beast.evolution.tree:beast.evolution.alignment'>
+
+  <!-- NorthAm.May.tree -->
+    <tree spec="beast.util.TreeParser" id="tree" adjustTipHeights="false" offset="1" newick="(((((((1:0.05089513275,((15:0.0932260769,24:0.0252260769):0.01902219744,79:0.09924827434):0.03964685841):0.02285238638,86:0.1477475191):0.008309311577,((20:0.05234983099,((73:0.04758186323,(74:0.04370550094,75:0.03870550094):0.01187636229):0.07699497503,97:0.1435768383):0.00177299273):0.01859272712,(78:0.09649385485,80:0.04949385485):0.05644870326):0.0221142726):0.05214321498,((35:0.0150979909,42:0.0340979909):0.07503297311,(72:0.0539749178,(76:0.01678794854,77:0.01978794854):0.01218696926):0.08015604621):0.003069081678):0.01096552553,(((((3:0.08531617468,5:0.09131617468):0.05814239722,(((((((9:0.03331545414,62:0.08831545414):0.003253035352,52:0.0425684895):0.003455468733,((((19:0.0318729003,(50:0.02820410776,55:0.03420410776):0.005668792544):0.002149754775,59:0.09702265508):0.0025375896,((54:0.05616431786,((((58:0.06763482653,60:0.07663482653):0.01221212326,61:0.09084694979):0.003752406695,70:0.08159935649):0.001170009025,66:0.09876936551):0.00139495235):0.002214587263,((63:0.08129309497,65:0.100293095):0.006632219865,71:0.1209253148):0.006453590291):0.002181339549):0.0003171584012,68:0.1158774031):0.001146555151):7.156560289e-05,64:0.1140955238):0.0002239667447,((67:0.060337916,69:0.035337916):0.03977172144,92:0.1001096374):0.01220985314):0.0009465512648,(30:0.1179888093,(47:0.02723271661,53:0.03823271661):0.002756092659):0.00327723257):0.001098337575,51:0.03736437942):0.03809419249):0.01838602136,((((((((11:0.0126148817,12:0.0176148817):0.0009849551806,16:0.04059983688):0.01745486401,13:0.03305470088):0.02086035522,14:0.07291505611):0.01252142962,57:0.04243648573):0.08399343952,(((((((((21:0.01685378781,23:0.04085378781):0.03312627883,84:0.07198006664):0.007763209147,((82:0.04758816961,100:0.08858816961):0.010983136,(83:0.03894534299,89:0.06094534299):0.008625962628):0.004171970171):0.001059726535,93:0.03080300232):0.003286214681,((88:0.01775595828,(98:0.07269891979,99:0.06769891979):0.002057038482):0.04057682648,91:0.04733278476):0.003756432245):0.0006038317158,((81:0.07641045317,85:0.01941045317):0.01082665091,96:0.03523710409):0.02945594463):0.0004603128797,95:0.0441533616):0.0001814640063,(87:0.01528393681,(90:0.04744011871,94:0.01144011871):0.0008438180932):0.0340508888):0.01503822606,(43:0.06501462799,44:0.06801462799):0.01035842367):0.03705687359):0.004290253188,37:0.06772017844):0.00339122675,(40:0.08661799245,45:0.1196179925):0.008493412732):0.00373318808):0.0002620791911,41:0.1021066725):0.03972587337,39:0.1368325458):0.02233302538):0.004776703593,(((2:0.07709976548,((7:0.05113726715,10:0.09313726716):0.006170156566,(28:0.05261613089,29:0.05061613089):0.05669129283):0.005792341762):0.01729669334,((22:0.03386353845,46:0.09686353845):0.01492941772,((31:0.02236742162,32:0.03636742162):0.08755548576,38:0.06092290738):0.0128700488):0.03160350265):0.01878910967,(((4:0.1869357681,(25:0.0164252987,(26:0.02859501025,27:0.02559501025):0.006830288447):0.1105104694):0.005992086191,(((17:0.02073000715,18:0.03473000715):0.06160131714,33:0.08233132429):0.006126271705,(36:0.06123665918,(49:0.09377024577,56:0.09977024577):0.005466413415):0.003220936813):0.02747025832):0.001907546682,(34:0.02834805549,48:0.09434805549):0.03248734551):0.003350167485):0.03375670632):0.008319513505,(6:0.01483294819,8:0.03683294819):0.08542884012):0;"/>
+
+   <state id="state" storeEvery="1000">
+        <stateNode spec="RealParameter" id="volz.n_S0" value="1100000"/>
+        <stateNode spec="RealParameter" id="volz.R0" value="2.5"/>
+        <stateNode spec="RealParameter" id="volz.gamma" value="0.30"/>
+        <stateNode spec="RealParameter" id="volz.origin" value="2"/>
+    </state>
+
+    <run spec="MCMC" id="mcmc" chainLength="10000000">
+
+        <distribution spec="CompoundDistribution" id="posterior">
+            <distribution id="coalescent" spec="Coalescent">
+                <treeIntervals spec='TreeIntervals' id='treeIntervals'>
+                    <tree idref="tree"/>
+                </treeIntervals>
+                
+                <populationModel spec="SIRPopulationFunction" id='popFunc'>
+                  <volzSIR spec="DeterministicCoalescentSIR" id="volzSIR"
+			   integrationStepCount='1001' logTrajectories="true">
+                        <R0 idref="volz.R0"/>
+                        <gamma idref="volz.gamma"/>
+                        <n_S0 idref="volz.n_S0"/>
+                        <origin idref="volz.origin"/>
+                    </volzSIR>
+                </populationModel>
+                
+            </distribution>
+            
+            <!-- Parameter priors -->
+            <distribution spec='CompoundDistribution' id='parameterPriors'>
+                <distribution spec='beast.math.distributions.Prior' x="@volz.n_S0">
+                  <distr spec='beast.math.distributions.Uniform' lower="1000000" upper="1E8"/>
+                </distribution>
+                <distribution spec='beast.math.distributions.Prior' x="@volz.R0">
+                    <distr spec="beast.math.distributions.LogNormalDistributionModel"  M="0.5" S="2"/>
+                </distribution>
+                <distribution spec='beast.math.distributions.Prior' x="@volz.gamma">
+		  <distr spec="beast.math.distributions.Normal" mean="91" sigma="5"/>
+                </distribution>
+                <distribution spec='beast.math.distributions.Prior' x="@volz.origin">
+                    <distr spec="beast.math.distributions.Uniform"  lower="0" upper="500"/>
+                </distribution>
+            </distribution>
+            
+        </distribution>
+
+      <operator id='S0' spec='ScaleOperator' scaleFactor="0.8" optimise="false" weight="1">
+            <parameter idref="volz.n_S0"/>
+      </operator>      
+        
+      <operator id='origin' spec='ScaleOperator' scaleFactor="0.8" optimise="false" weight="1">
+          <parameter idref="volz.origin"/>
+      </operator>
+
+      <operator id='R0' spec='ScaleOperator' scaleFactor="0.8" optimise="false" weight="1">
+          <parameter idref="volz.R0"/>
+      </operator>
+
+      <operator id='gamma' spec='ScaleOperator' scaleFactor="0.8" optimise="false" weight="1">
+          <parameter idref="volz.gamma"/>
+       </operator>
+
+
+        <logger logEvery="1000" fileName="DeterCoalSIR_h1n1_May.log">
+   	  <model idref='posterior'/>
+            <log idref="posterior"/>
+            <log idref="volz.n_S0"/>
+            <log idref="volz.R0"/>
+            <log idref="volz.gamma"/>
+            <log idref="volz.origin"/>
+            <log idref="volzSIR"/>
+	    <log id="treeHeight" spec="beast.evolution.tree.TreeHeightLogger" tree="@tree"/>
+        </logger>
+
+        <logger logEvery="1000">
+            <model idref='posterior'/>
+            <log idref="posterior"/>
+            <log idref="volz.n_S0"/>
+            <log idref="volz.R0"/>
+            <log idref="volz.gamma"/>
+            <log idref="volz.origin"/>
+	    <log idref="treeHeight"/>
+            <!--log idref="volzSIR"/-->
+        </logger>
+
+    </run>
+
+</beast>
